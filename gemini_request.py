@@ -1,7 +1,7 @@
 from google import genai
 
 # Initialize Gemini client with API Key
-client = genai.Client(api_key="AIzaSyBh5dES-rcu14U8DWCJIxKbx0mKhjrA1l0")   
+client = genai.Client(api_key="ADD GOOGLE AI STUDIO API KEY HERE")   
 
 # Define different prompting techniques
 prompts = {
