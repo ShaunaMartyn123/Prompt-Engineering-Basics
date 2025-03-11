@@ -1,0 +1,49 @@
+## Gemini AI Prompting & Question Type Analysis
+
+### 1️⃣ Prompting Techniques
+
+**Zero-Shot Prompt:**
+What is the capital of France?
+
+**Response:**
+The capital of France is **Paris**.
+
+
+================================================================================
+
+**Few-Shot Prompt:**
+The capital of Germany is Berlin. The capital of Spain is Madrid. What is the capital of France?
+
+**Response:**
+The capital of France is Paris.
+
+
+================================================================================
+
+**Chain-of-Thought Prompt:**
+To find the capital of France, follow these steps:
+1. Identify France as a country in Europe.
+2. Look at major cities in France.
+3. The capital city is the political and economic center.
+4. Based on this, what is the capital of France?
+
+**Response:**
+Based on the steps provided, the capital of France is **Paris**.
+
+
+================================================================================
+
+### 2️⃣ Open-Ended vs. Closed-Ended Questions
+
+**🔹 Open-Ended Question:** what is the capital of Spain?
+
+**Response:**
+The capital of Spain is **Madrid**.
+
+
+**🔹 Closed-Ended Question:** Is Paris the capital of France?
+
+**Response:**
+Yes, Paris is the capital of France.
+
+
