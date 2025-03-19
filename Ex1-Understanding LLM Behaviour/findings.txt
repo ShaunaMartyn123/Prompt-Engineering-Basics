@@ -22,13 +22,13 @@ The capital of France is Paris.
 
 **Chain-of-Thought Prompt:**
 To find the capital of France, follow these steps:
-1. Identify France as a country in Europe.
-2. Look at major cities in France.
-3. The capital city is the political and economic center.
-4. Based on this, what is the capital of France?
+        1. Identify France as a country in Europe.
+        2. Look at major cities in France.
+        3. The capital city is the political and economic center.
+        4. Based on this, what is the capital of France?
 
 **Response:**
-Based on the steps provided, the capital of France is **Paris**.
+Based on these steps, the capital of France is **Paris**.
 
 
 ================================================================================

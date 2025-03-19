@@ -1,5 +1,14 @@
 from google import genai
-import json  # Import JSON module
+from dotenv import load_dotenv
+import os 
+
+
+# Load environment variables from .env
+load_dotenv()
+
+# Retrieve the API key
+api_key = os.getenv("GOOGLE_API_KEY")
+
 
 # Initialize Gemini client
 client = genai.Client(api_key="ADD GOOGLE AI STUDIO API KEY HERE ")  
@@ -24,7 +33,7 @@ prompts = {
         {
             "question" : "What is the capital of France",
             "answer" : "Your answer here",
-            "confidence" : "How confident are youn in this answer? (High/Medium/Low)"
+            "confidence" : "How confident are you in this answer? (High/Medium/Low)"
         
         }
     """,
@@ -67,4 +76,4 @@ for prompt_type, prompt_text in prompts.items():
         # If not JSON, print the raw response
         print("\n⚠️ Error: Response is not valid JSON. Here is the raw output:")
         print(json_response)  # Print the raw response as it is
-    print("\n" + "="*80)
+    print("\n" + "="*80) 

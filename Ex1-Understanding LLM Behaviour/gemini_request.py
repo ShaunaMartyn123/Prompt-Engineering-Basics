@@ -1,7 +1,21 @@
 from google import genai
+from dotenv import load_dotenv
+import os 
 
+<<<<<<< HEAD:gemini_request.py
 # Initialize Gemini client with API Key
 client = genai.Client(api_key="ADD GOOGLE AI STUDIO API KEY HERE")   
+=======
+
+# Load environment variables from .env
+load_dotenv()
+
+# Retrieve the API key
+api_key = os.getenv("GOOGLE_API_KEY")
+
+# Initialize the Gemini API client
+client = genai.Client(api_key=api_key)
+>>>>>>> 9d41c04 (Added gitignore and env file):Ex1-Understanding LLM Behaviour/gemini_request.py
 
 # Define different prompting techniques
 prompts = {
