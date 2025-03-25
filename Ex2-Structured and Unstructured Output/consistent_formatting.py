@@ -1,5 +1,3 @@
-# Write a Python script that parses the JSON response and extracts key fields
-
 # Modify the prompt to enforce consistent formatting across multiple queries.
 # Hint: Provide an explicit example of the expected JSON structure.
 
@@ -52,32 +50,8 @@ response = client.models.generate_content(
     contents = prompts
 )
 
-# Print the question and the response - in JSON style
+# Print the question and the response
 print(f"Prompt: {prompts}")
 print(f"Response: {response.text}")
-
-try: 
-    clean_response = response.text.strip("```json").strip("```") # Removes backticks from the response
-    key_words = json.loads(clean_response)
-
-    if isinstance(key_words, list): # returns true if object is of the specifiec type 
-        print ("\nExtracted Information:")
-        for item in key_words:
-            question = item.get("question", "Unknown Question")
-            answer = item.get("answer", "No answer provided")
-            confidence = item.get("confidence", "Unknown Confidence level")
-
-            print("\nExtracted Information:")
-            print(f"Question: {question}")
-            print(f"Answer: {answer}")
-            print(f"Confidence: {confidence}")
-    else:
-        print("Error: Expected a list of responses but got something else.")
-
-except json.JSONDecodeError:
-    print("Error: The response is not valid JSON.")
-    
-
-
 
 

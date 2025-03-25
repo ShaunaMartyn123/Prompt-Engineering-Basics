@@ -12,7 +12,7 @@ api_key = os.getenv("GOOGLE_API_KEY")
 # Initialize the Gemini API client
 client = genai.Client(api_key=api_key)
 
-# Chain of Thought prompts
+# Opend and closed ended prompt mix of example questions
 open_closed_ended_prompts = """
 
     Answer the following questions then classify wheather they are "open-ended" or "closed-ended":
@@ -31,7 +31,7 @@ response = client.models.generate_content(
     contents = open_closed_ended_prompts
 )
 
-    #Print the question and the response
+#Print the question and the response
 print(f"Prompt: {open_closed_ended_prompts}")
 print(f"Response: {response.text}")
 

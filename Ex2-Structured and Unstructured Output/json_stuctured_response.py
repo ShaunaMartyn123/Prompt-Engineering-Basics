@@ -9,7 +9,7 @@ load_dotenv()
 # Retrieve the API key
 api_key = os.getenv("GOOGLE_API_KEY")
 
-# Initialize the Gemini API client
+# Initialise the Gemini API client
 client = genai.Client(api_key=api_key)
 
 expected_json_example =  """
@@ -23,9 +23,8 @@ expected_json_example =  """
 
 # Prompts  - Zero shot
 prompts = f"""
-    
-        question :     
-        Now answer the following question:
+
+        Now answer the following questions:
 
         "In what year did the Titanic sink?"
         "List the 7 wonders of the world"
@@ -41,7 +40,7 @@ response = client.models.generate_content(
     contents = prompts
 )
 
-    #Print the question and the response
+# Print the question and the response
 print(f"Prompt: {prompts}")
 print(f"Response: {response.text}")
 

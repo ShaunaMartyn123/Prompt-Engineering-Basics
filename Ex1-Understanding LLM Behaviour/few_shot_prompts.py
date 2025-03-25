@@ -35,6 +35,6 @@ response = client.models.generate_content(
     contents = few_shot_prompt
 )
 
-    #Print the question and the response
+#Print the question and the response
 print(f"Prompt: {few_shot_prompt}")
 print(f"Response: {response.text}")

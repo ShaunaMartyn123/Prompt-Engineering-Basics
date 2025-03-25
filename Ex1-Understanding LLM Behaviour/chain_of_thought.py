@@ -27,6 +27,6 @@ response = client.models.generate_content(
     contents = chain_of_thought_prompt
 )
 
-    #Print the question and the response
+#Print the question and the response
 print(f"Prompt: {chain_of_thought_prompt}")
 print(f"Response: {response.text}")
